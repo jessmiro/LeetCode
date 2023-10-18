@@ -1,0 +1,12 @@
+class Solution(object):
+    def containsDuplicate(self, nums):
+        #list to set because set doesn't allow duplicates
+        #compare lengths
+        # if they're the same, it returns false because it means
+        #there's no duplicates
+        return (len(set(nums)) != len(nums))
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        
